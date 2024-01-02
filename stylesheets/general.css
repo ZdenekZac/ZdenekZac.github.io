@@ -89,25 +89,15 @@ body {
   margin: 0 auto;
   line-height: 1;
   font-weight: 400;
-  height: 100vh;
+ /* height: 100vh; */
   overflow: scroll;
   /* position: relative; */
   max-width: 120rem;
-  background-image: url(../img/concrete.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(72, 72, 72, 0.4)),
-    url(../img/concrete.webp);
   background-image: url(../img/concrete.webp);
 }
-
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 /************************************/
 /*    GENERAL REUSABLE COMPONENTS   */
