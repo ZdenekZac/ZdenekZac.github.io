@@ -1,0 +1,305 @@
+/************************************
+/* BELOW 1295px (Landscape Tablets yellow  */
+/************************************/
+
+/* 1295px/16 = 75em */
+@media (max-width: 81em) {
+  .container {
+    height: auto;
+  }
+
+  .container-profile-picture {
+    width: auto;
+    height: auto;
+  }
+  .about-img-div {
+    width: auto;
+    height: auto;
+    margin-left: 2em;
+  }
+
+  .slides-wrapper {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonial-text {
+    font-size: 1.8em;
+  }
+
+  .text-about {
+    font-size: 2em;
+    line-height: 1.2;
+    color: black;
+    margin-top: 3em;
+  }
+
+  .edu-text {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .div-projects-tabs {
+    row-gap: 1.6em;
+  }
+}
+
+/*******************************
+/* BELOW 850px (Tablets) green */
+/******************************/
+/* 850/16=53.125 */
+
+@media (max-width: 53em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main_nav {
+    -webkit-backdrop-filter: blur(10px); /*for Safari*/
+    backdrop-filter: blur(12px);
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.7s ease-in;
+
+    /* HIDE NAVIGATION */
+    /* allows NO transitions at all */
+    /* display: none; */
+
+    /* 1. hide it visually */
+    opacity: 0;
+
+    /* 2. make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. hide it from screen readers */
+    /* visibility: hidden; */
+  }
+
+  .nav_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8em;
+    z-index: 1000;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav_link_icon {
+    margin-left: 4em;
+    margin-bottom: 6.4em;
+  }
+
+  .custom-loader {
+    height: 40px;
+    width: 40px;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    right: 2.4em;
+    top: 1.6em;
+  }
+
+  .nav-open.main_nav {
+    opacity: 3;
+    pointer-events: auto;
+    visibility: visible;
+    position: fixed;
+    transform: translateX(0);
+    background-color: transparent;
+  }
+
+  .nav-open.icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open.icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
+
+  h1 {
+    font-size: 5.2em;
+  }
+
+  .profile-picture {
+    background-size: 60vh;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .container-header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    margin-bottom: 2em;
+  }
+
+  .nav_link:link,
+  .nav_link:visited {
+    font-weight: 600;
+    font-size: 3.6em;
+  }
+
+  .container-about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img-div {
+    flex-direction: row;
+    gap: 5em;
+    margin-left: 0;
+  }
+
+  .icon-about {
+    font-size: 12em;
+  }
+}
+
+/*******************************
+/* BELOW 690px (Tablets) pink */
+/******************************/
+/* /16=53.125 */
+
+@media (max-width: 43em) {
+  .div8 {
+    grid-area: 3/ 2 / 4 / 3;
+  }
+
+  .div4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .edu-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .slides-wrapper {
+    width: 45em;
+  }
+
+  .testimonial-modal {
+    height: 70vh;
+    width: 55vh;
+  }
+
+  .projects-picture-wrapper {
+    width: 80%;
+  }
+}
+
+/*******************************
+/* BELOW 540px (Tablets) pink */
+/******************************/
+
+@media (max-width: 34em) {
+  .profile-picture {
+    background-size: 56vh;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .icon-about {
+    font-size: 15em;
+  }
+
+  .text-about {
+    font-size: 1.8em;
+  }
+
+  .slides-wrapper {
+    width: 35em;
+  }
+
+  .icon-about {
+    font-size: 8em;
+  }
+
+  h1 {
+    font-size: 4.4em;
+  }
+}
+
+/*******************************
+/* BELOW 431px (Tablets) pink */
+/******************************/
+
+@media (max-width: 27em) {
+  .container-about {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-picture {
+    background-size: 42vh;
+  }
+
+  .about-img-div {
+    flex-direction: row;
+    margin-top: 2.4em;
+  }
+
+  .projects-picture-wrapper {
+    width: 98%;
+  }
+
+  .projects-picture {
+    height: 35em;
+    width: 34em;
+  }
+
+  .edu-wrapper {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .div3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .div7 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .btn-slider {
+    height: 2em;
+    width: 2em;
+    font-size: 1.8em;
+  }
+
+  .slide {
+    padding: 1.8em;
+  }
+
+  .testimonial-modal {
+    height: 62vh;
+    width: 47vh;
+  }
+
+  .sentence-header {
+    font-size: 1.8em;
+  }
+}
+
+/*******************************
+/* BELOW 365px  purple */
+/******************************/
+
+@media (max-width: 23em) {
+  .projects-picture {
+    height: 31em;
+    width: 30em;
+  }
+}
