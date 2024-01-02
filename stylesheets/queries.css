@@ -28,6 +28,10 @@
     font-size: 1.8em;
   }
 
+  .text-projects-info {
+    font-size: 1.8em;
+  }
+
   .text-about {
     font-size: 2em;
     line-height: 1.2;
@@ -178,6 +182,10 @@
   }
 
   .div4 {
+    /* grid-area: 3 / 1 / 4 / 2; */
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div5 {
     grid-area: 3 / 1 / 4 / 2;
   }
   .edu-wrapper {
@@ -228,6 +236,11 @@
     font-size: 8em;
   }
 
+  .edu-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
   h1 {
     font-size: 4.4em;
   }
@@ -266,6 +279,13 @@
   }
 
   .div3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .div6 {
     grid-area: 4 / 1 / 5 / 2;
   }
 
@@ -283,9 +303,17 @@
     padding: 1.8em;
   }
 
+  .slides-wrapper {
+    width: 33em;
+  }
+
   .testimonial-modal {
     height: 62vh;
     width: 47vh;
+  }
+
+  .testimonial-text {
+    font-size: 1.5em;
   }
 
   .sentence-header {
@@ -301,5 +329,24 @@
   .projects-picture {
     height: 31em;
     width: 30em;
+  }
+
+  .slides-wrapper {
+    width: 30em;
+  }
+
+  .testimonial-text {
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-size: 3.2em;
+  }
+  .div-projects-tabs {
+    justify-content: center;
+  }
+
+  .projects-tab {
+    width: 15em;
   }
 }
