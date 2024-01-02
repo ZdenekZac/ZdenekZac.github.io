@@ -327,7 +327,7 @@
   align-content: center;
   transition: all 0.5s;
   background-color: rgba(255, 255, 255, 0.5);
-  padding-top: 1rem;
+  padding: 1rem;
   border-radius: 10px;
   transition: all 0.5s ease-out;
 }
@@ -570,7 +570,7 @@
 
 .testimonial-text {
   .sentence-header {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 1.5;
     font-weight: 600;
     animation: h1_web 1s ease-out;
