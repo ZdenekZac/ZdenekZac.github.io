@@ -357,6 +357,7 @@ em - current font size
   }
   .div-projects-tabs {
     justify-content: center;
+    column-gap: 2rem;
   }
 
   .projects-tab {
