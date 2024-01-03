@@ -1,3 +1,12 @@
+/* rem and em do NOT depend on html font-size in media queries
+Instead: 1rem = 1em  
+rem - root font size
+em - current font size 
+!! USE em instead of rem in media queries !!*/
+
+/* Percentage of user's browser font-size setting: */
+/* 10px / 16px = 0.652 = 62.5% */
+
 /************************************
 /* BELOW 1295px (Landscape Tablets yellow  */
 /************************************/
@@ -15,7 +24,7 @@
   .about-img-div {
     width: auto;
     height: auto;
-    margin-left: 2em;
+    margin-left: 2rem;
   }
 
   .slides-wrapper {
@@ -25,27 +34,27 @@
   }
 
   .testimonial-text {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .text-projects-info {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .text-about {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.2;
     color: black;
-    margin-top: 3em;
+    margin-top: 3rem;
   }
 
   .edu-text {
-    font-size: 1.3em;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .div-projects-tabs {
-    row-gap: 1.6em;
+    row-gap: 1.6rem;
   }
 }
 
@@ -89,7 +98,7 @@
   .nav_list {
     flex-direction: column;
     align-items: center;
-    gap: 4.8em;
+    gap: 4.8rem;
     z-index: 1000;
   }
 
@@ -98,8 +107,8 @@
   }
 
   .nav_link_icon {
-    margin-left: 4em;
-    margin-bottom: 6.4em;
+    margin-left: 4rem;
+    margin-bottom: 6.4rem;
   }
 
   .custom-loader {
@@ -110,8 +119,8 @@
     display: block;
     z-index: 1000;
     position: fixed;
-    right: 2.4em;
-    top: 1.6em;
+    right: 2.4rem;
+    top: 1.6rem;
   }
 
   .nav-open.main_nav {
@@ -131,7 +140,7 @@
   }
 
   h1 {
-    font-size: 5.2em;
+    font-size: 5.2rem;
   }
 
   .profile-picture {
@@ -147,13 +156,13 @@
   }
 
   .section {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 
   .nav_link:link,
   .nav_link:visited {
     font-weight: 600;
-    font-size: 3.6em;
+    font-size: 3.6rem;
   }
 
   .container-about {
@@ -162,19 +171,19 @@
 
   .about-img-div {
     flex-direction: row;
-    gap: 5em;
+    gap: 5rem;
     margin-left: 0;
   }
 
   .icon-about {
-    font-size: 12em;
+    font-size: 12rem;
   }
 }
 
 /*******************************
 /* BELOW 690px (Tablets) pink */
 /******************************/
-/* /16=53.125 */
+/* /16=43.125 */
 
 @media (max-width: 43em) {
   .div8 {
@@ -194,7 +203,7 @@
   }
 
   .slides-wrapper {
-    width: 45em;
+    width: 45rem;
   }
 
   .testimonial-modal {
@@ -212,11 +221,10 @@
 /******************************/
 
 @media (max-width: 34em) {
-
-    body {
+  body {
     background-image: url(../img/concrete3.webp);
   }
-  
+
   .profile-picture {
     background-size: 56vh;
   }
@@ -226,19 +234,19 @@
   }
 
   .icon-about {
-    font-size: 15em;
+    font-size: 15rem;
   }
 
   .text-about {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .slides-wrapper {
-    width: 35em;
+    width: 35rem;
   }
 
   .icon-about {
-    font-size: 8em;
+    font-size: 8rem;
   }
 
   .edu-text {
@@ -247,7 +255,7 @@
   }
 
   h1 {
-    font-size: 4.4em;
+    font-size: 4.4rem;
   }
 }
 
@@ -266,7 +274,7 @@
 
   .about-img-div {
     flex-direction: row;
-    margin-top: 2.4em;
+    margin-top: 2.4rem;
   }
 
   .projects-picture-wrapper {
@@ -274,8 +282,8 @@
   }
 
   .projects-picture {
-    height: 35em;
-    width: 34em;
+    height: 35rem;
+    width: 34rem;
   }
 
   .edu-wrapper {
@@ -299,17 +307,17 @@
   }
 
   .btn-slider {
-    height: 2em;
-    width: 2em;
-    font-size: 1.8em;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.8rem;
   }
 
   .slide {
-    padding: 1.8em;
+    padding: 1.8rem;
   }
 
   .slides-wrapper {
-    width: 33em;
+    width: 33rem;
   }
 
   .testimonial-modal {
@@ -318,11 +326,11 @@
   }
 
   .testimonial-text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .sentence-header {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 }
 
@@ -332,26 +340,128 @@
 
 @media (max-width: 23em) {
   .projects-picture {
-    height: 31em;
-    width: 30em;
+    height: 31rem;
+    width: 30rem;
   }
 
   .slides-wrapper {
-    width: 30em;
+    width: 30rem;
   }
 
   .testimonial-text {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   h1 {
-    font-size: 3.2em;
+    font-size: 3.2rem;
   }
   .div-projects-tabs {
     justify-content: center;
   }
 
   .projects-tab {
-    width: 15em;
+    width: 15rem;
   }
 }
+
+/*******************************
+/* BELOW 320px  */
+/******************************/
+
+@media (max-width: 20em) {
+  .container-header {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .profile-picture {
+    height: 42rem;
+  }
+
+  .btn-header:link,
+  .btn-header:visited {
+    margin-top: 2.4rem;
+  }
+  .projects-picture-wrapper {
+    width: 90%;
+  }
+
+  .projects-picture {
+    height: 98%;
+    width: 98%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 4.5fr 1fr;
+  }
+
+  .slides-wrapper {
+    width: 22em;
+  }
+
+  .projects-text-see-website {
+    font-size: 1.2rem;
+  }
+
+  .projects-tab {
+    font-size: 1.4rem;
+  }
+}
+
+/**********************************/
+/*     FIXING SAFARI FLEXBOX GAP  */
+/**********************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
+
+/* Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* --- SPACING SYSTEM (px) ---
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
