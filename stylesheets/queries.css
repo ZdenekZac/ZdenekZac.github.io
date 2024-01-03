@@ -212,6 +212,11 @@
 /******************************/
 
 @media (max-width: 34em) {
+
+    body {
+    background-image: url(../img/concrete3.webp);
+  }
+  
   .profile-picture {
     background-size: 56vh;
   }
