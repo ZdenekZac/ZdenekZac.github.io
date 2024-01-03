@@ -75,7 +75,7 @@ em - current font size
     height: 100vh;
     transform: translateX(100%);
 
-    display: grid;
+    display: none;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -124,6 +124,7 @@ em - current font size
   }
 
   .nav-open.main_nav {
+    display: grid;
     opacity: 3;
     pointer-events: auto;
     visibility: visible;
